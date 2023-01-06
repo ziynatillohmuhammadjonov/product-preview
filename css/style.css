@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/fraunces-v24-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/fraunces-v24-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/montserrat-v25-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100vh;
+}
+body {
+  height: 100vh;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  /* or 164% */
+
+  /* Aurometal Saurus */
+
+  background-color: #f2f2f2;
+  color: #6c7289;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: flex;
+}
+.main {
+  background: #ffffff;
+  border-radius: 10px;
+}
+.main__container {
+  display: flex;
+  align-items: center;
+}
+.container {
+}
+.main__img {
+  border-radius: 10px 0 0 10px;
+  margin-right: 3.2rem;
+}
+.main__img--mobile {
+  display: none;
+}
+.main__info {
+  padding-top: 3.2rem;
+  width: 237px;
+  margin-right: 3.2rem;
+}
+.main__subtitle {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 5px;
+  margin-bottom: 2rem;
+}
+.main__title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  /* or 100% */
+
+  /* Gunmetal */
+
+  color: #1c232b;
+  margin-bottom: 2.4rem;
+}
+.main__descr {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #6c7289;
+  margin-bottom: 2.9rem;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.main__price--bonus {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  /* identical to box height, or 100% */
+
+  /* Deep Aquamarine */
+
+  color: #3d8168;
+  margin-right: 1.9rem;
+}
+.main__prise--real {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  /* identical to box height, or 177% */
+
+  text-decoration-line: line-through;
+}
+.main__button {
+  display: flex;
+  background: #3d8168;
+  border-radius: 8px;
+  padding: 15px 62px 16px 63px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  /* Pure White */
+
+  color: #ffffff;
+  margin-bottom: 3.2rem;
+}
+.main__button--img {
+  margin-right: 1.16rem;
+}
+@media screen and (max-width: 650px) {
+  .main__container {
+    flex-direction: column;
+  }
+  .main__img {
+    display: none;
+    border: 8px 8px 0 0;
+    margin-right: 0;
+  }
+  .main__img--mobile {
+    display: block;
+    border-radius: 8px 8px 0 0;
+  }
+  .main__info {
+    padding-top: 2.7rem;
+    margin: 0;
+    width: 29.5rem;
+  }
+  .main__descr {
+    margin-bottom: 2.4rem;
+  }
+  .main__subtitle {
+    margin-bottom: 1.2rem;
+  }
+}
